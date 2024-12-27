@@ -5,6 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
+    "build": "npm run build --prefix client",
     "dev": "SET NODE_ENV=DEVELOPMENT& nodemon server/server",
     "prod": "SET NODE_ENV=PRODUCTION& node server/server",
     "seed": "node server/utils/seedProducts.js"
