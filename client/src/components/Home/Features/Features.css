@@ -1,0 +1,44 @@
+.icon {
+  height: 65px;
+  width: 65px;
+  background-color: rgba(6, 145, 2, 0.1);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.main-icon {
+  font-size: 30px;
+  color: #222;
+  z-index: 1;
+}
+
+.feature-card:hover .icon {
+    transition: all 0.3s ease;
+    background-color: #10AC84;
+}
+
+.feature-card:hover .main-icon  {
+    transition: all 0.3s ease;
+    color:#fff !important;
+}
+
+.feature-heading {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.feature-desc {
+    color: #7e7e7e;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+}

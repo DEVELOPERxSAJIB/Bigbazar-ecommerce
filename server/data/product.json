@@ -1,0 +1,146 @@
+[
+  {
+    "name": "TV all Mount",
+    "price": 123,
+    "description": "lorem ipsum",
+    "rating": 4.0,
+    "images": [
+      {
+        "public_id": "public_id_demo",
+        "url": "https://m.economictimes.com/thumb/msid-100966456,width-1200,height-900,resizemode-4,imgsize-63314/why-become-a-product-manager.jpg"
+      }
+    ],
+    "category": "Electronics",
+    "seller": "Amazone",
+    "numOfReviews": 2,
+    "reviews": []
+  },
+  {
+    "name": "Professional Camera",
+    "price": 599,
+    "description": "Lorem ipsum",
+    "rating": 4.5,
+    "images": [
+      {
+        "public_id": "public_id_demo_camera",
+        "url": "https://example.com/camera-image.jpg"
+      }
+    ],
+    "category": "Cameras",
+    "seller": "CameraWorld",
+    "numOfReviews": 5,
+    "reviews": []
+  },
+  {
+    "name": "Laptop Pro",
+    "price": 899,
+    "description": "Lorem ipsum",
+    "rating": 4.8,
+    "images": [
+      {
+        "public_id": "public_id_demo_laptop",
+        "url": "https://example.com/laptop-image.jpg"
+      }
+    ],
+    "category": "Laptops",
+    "seller": "TechZone",
+    "numOfReviews": 8,
+    "reviews": []
+  },
+  {
+    "name": "Smartphone Accessories Bundle",
+    "price": 49.99,
+    "description": "Lorem ipsum",
+    "rating": 3.5,
+    "images": [
+      {
+        "public_id": "public_id_demo_accessories",
+        "url": "https://example.com/accessories-image.jpg"
+      }
+    ],
+    "category": "Accessories",
+    "seller": "GadgetHub",
+    "numOfReviews": 3,
+    "reviews": []
+  },
+  {
+    "name": "Wireless Headphones",
+    "price": 79.99,
+    "description": "Lorem ipsum",
+    "rating": 4.2,
+    "images": [
+      {
+        "public_id": "public_id_demo_headphones",
+        "url": "https://example.com/headphones-image.jpg"
+      }
+    ],
+    "category": "Headphones",
+    "seller": "AudioTech",
+    "numOfReviews": 6,
+    "reviews": []
+  },
+  {
+    "name": "Organic Snack Box",
+    "price": 29.99,
+    "description": "Lorem ipsum",
+    "rating": 4.5,
+    "images": [
+      {
+        "public_id": "public_id_demo_snack",
+        "url": "https://example.com/snack-image.jpg"
+      }
+    ],
+    "category": "Food",
+    "seller": "HealthyBites",
+    "numOfReviews": 4,
+    "reviews": []
+  },
+  {
+    "name": "Bestseller Novel",
+    "price": 15.99,
+    "description": "Lorem ipsum",
+    "rating": 4.7,
+    "images": [
+      {
+        "public_id": "public_id_demo_novel",
+        "url": "https://example.com/novel-image.jpg"
+      }
+    ],
+    "category": "Books",
+    "seller": "BookEmpire",
+    "numOfReviews": 10,
+    "reviews": []
+  },
+  {
+    "name": "Running Shoes",
+    "price": 79.99,
+    "description": "Lorem ipsum",
+    "rating": 4.6,
+    "images": [
+      {
+        "public_id": "public_id_demo_shoes",
+        "url": "https://example.com/shoes-image.jpg"
+      }
+    ],
+    "category": "Clothes/Shoes",
+    "seller": "SportyFeet",
+    "numOfReviews": 7,
+    "reviews": []
+  },
+  {
+    "name": "Skincare Set",
+    "price": 49.99,
+    "description": "Lorem ipsum",
+    "rating": 4.4,
+    "images": [
+      {
+        "public_id": "public_id_demo_skincare",
+        "url": "https://example.com/skincare-image.jpg"
+      }
+    ],
+    "category": "Beauty/Health",
+    "seller": "GlowUp",
+    "numOfReviews": 5,
+    "reviews": []
+  }
+]
