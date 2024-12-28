@@ -6,9 +6,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server/server.js",
-    "build": "npm install --prefix client && npm run build --prefix client",
-    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon server/server",
-    "prod": "NODE_ENV=PRODUCTION & node server/server",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "dev": "SET NODE_ENV=DEVELOPMENT && nodemon server/server",
+    "prod": "NODE_ENV=PRODUCTION && node server/server",
     "seed": "node server/utils/seedProducts.js"
   },
   "author": "Md SaJib Shikder",
