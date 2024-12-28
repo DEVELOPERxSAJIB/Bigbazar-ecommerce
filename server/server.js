@@ -1,9 +1,7 @@
 const app = require("./app.js");
 const connectDatabase = require("./config/database");
-const express = require("express");
-const path = require("path");
 
-const ___dirname = path.resolve()
+
 
 // handle uncaught exceptions
 process.on('uncaughtException', (err) => {
@@ -17,13 +15,7 @@ require("dotenv").config();
 
 connectDatabase();
 
-if (process.env.NODE_ENV === 'PRODUCTION') {
-  app.use(express.static(path.join(___dirname, 'client', 'dist')));
 
-  app.get('*', (req, res) =>
-    res.sendFile(path.join(___dirname, 'client', 'dist', 'index.html'))
-  );
-}
 
 const PORT = process.env.PORT || 8000;
 const server = app.listen(PORT, () => {

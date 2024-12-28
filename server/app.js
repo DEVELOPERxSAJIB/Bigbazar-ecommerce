@@ -16,6 +16,10 @@ const categoryRoute = require("./routes/categoryRouter");
 
 const app = express();
 
+const path = require("path");
+
+const ___dirname = path.resolve()
+
 // init JSON middleware for express
 app.use(
   cors({
@@ -45,6 +49,14 @@ app.use("/api/v1/banner", bannerRoute);
 app.use("/api/v1/brand", brandRoute);
 app.use("/api/v1/category", categoryRoute);
 app.use("/api/v1/payment", paymentRoute);
+
+if (process.env.NODE_ENV === 'PRODUCTION') {
+  app.use(express.static(path.join(___dirname, 'client', 'dist')));
+
+  app.get('*', (req, res) =>
+    res.sendFile(path.join(___dirname, 'client', 'dist', 'index.html'))
+  );
+}
 
 // Client error handling
 app.use((req, res, next) => {
