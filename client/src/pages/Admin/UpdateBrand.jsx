@@ -3,9 +3,9 @@ import MetaData from "../../../utils/MetaData";
 import Sidebar from "./Sidebar";
 import { useEffect, useState } from "react";
 import AlertMessage from "../../../utils/AlertMessage";
-import { setMessageEmpty } from "../../features/productsList/productsListSlice";
 import { useNavigate, useParams } from "react-router-dom";
 import { getAllBrand, updateBrand } from "../../features/brand/brandApiSlice";
+import { setMessageEmpty } from "../../features/brand/brandSlice";
 
 const UpdateBrand = () => {
   const { id } = useParams();

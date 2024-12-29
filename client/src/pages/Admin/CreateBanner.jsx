@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createBanner } from "../../features/banner/bannerApiSlice";
 import AlertMessage from "../../../utils/AlertMessage";
-import { setMessageEmpty } from "../../features/category/categorySlice";
 import { useNavigate } from "react-router-dom";
+import { setMessageEmpty } from "../../features/banner/bannerSlice";
 
 const CreateBanner = () => {
   const dispatch = useDispatch();

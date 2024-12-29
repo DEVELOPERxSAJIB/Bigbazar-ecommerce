@@ -3,9 +3,9 @@ import MetaData from "../../../utils/MetaData";
 import Sidebar from "./Sidebar";
 import { useEffect, useState } from "react";
 import AlertMessage from "../../../utils/AlertMessage";
-import { setMessageEmpty } from "../../features/productsList/productsListSlice";
 import { useNavigate, useParams } from "react-router-dom";
 import { editCategory, getAllCategory } from "../../features/category/categoryApiSlice";
+import { setMessageEmpty } from "../../features/category/categorySlice";
 
 const EditCategory = () => {
   const { id } = useParams();
