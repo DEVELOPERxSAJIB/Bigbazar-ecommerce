@@ -63,7 +63,7 @@ app.use((req, res, next) => {
   next(createError(404, "Router Not Found"));
 });
 
-// // server error handling
+// server error handling
 app.use((err, req, res, next) => {
   return errorResponse(res, {
     statusCode: err.status,

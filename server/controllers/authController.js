@@ -830,13 +830,13 @@ const updateUserProfile = async (req, res, next) => {
 
     // find user
     const options = { password: 0 };
-    const updateUser = await User.findById(id, options);
+    const exestingUser = await User.findById(id, options);
 
     // avatar update
     let userAvatar = null;
     if (req.file) {
       // if new file provided, delete previous avatar
-      const public_id = updateUser?.avatar?.public_id;
+      const public_id = exestingUser?.avatar?.public_id;
       if (public_id) {
         await cloudDeleteAvatar(public_id);
       }
@@ -845,14 +845,16 @@ const updateUserProfile = async (req, res, next) => {
       userAvatar = await cloudUploadAvatar(req.file);
     }
 
+    console.log(req.body);
+
     const data = {
       name,
       email,
       avatar: {
         public_id: userAvatar
           ? userAvatar?.public_id
-          : updatedUser?.avatar?.public_id,
-        url: userAvatar ? userAvatar?.url : updatedUser?.avatar?.url,
+          : exestingUser?.avatar?.public_id,
+        url: userAvatar ? userAvatar?.url : exestingUser?.avatar?.url,
       },
     };
 

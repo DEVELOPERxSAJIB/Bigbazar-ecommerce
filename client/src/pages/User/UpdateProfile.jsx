@@ -15,7 +15,6 @@ const UpdateProfile = () => {
   const [avatar, setAvatar] = useState(null);
   const [previewAvatar, setPreviewAvatar] = useState(null);
 
-  // data update
   const [input, setInput] = useState({
     name: "",
     email: "",

@@ -1,10 +1,19 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import MainLoader from "../../../utils/MainLoader";
 import { Link } from "react-router-dom";
 import MetaData from "../../../utils/MetaData";
+import { useEffect } from "react";
+import { setMessageEmpty } from "../../features/auth/authSlice";
 
 const Profile = () => {
-  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const { user, message } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    if (message) {
+      dispatch(setMessageEmpty());
+    }
+  }, [dispatch, message]);
 
   return (
     <>
@@ -17,10 +26,10 @@ const Profile = () => {
               <figure className="avatar avatar-profile">
                 <img
                   className="rounded-circle img-fluid"
-                  src={user?.avatar?.url
-                    ? user?.avatar?.url
-                    : 
-                    "https://cdn-icons-png.flaticon.com/512/3870/3870822.png"
+                  src={
+                    user?.avatar?.url
+                      ? user?.avatar?.url
+                      : "https://cdn-icons-png.flaticon.com/512/3870/3870822.png"
                   }
                   alt={"profile image"}
                 />
