@@ -1,4 +1,3 @@
-// process.env.NODE_TLS_REJECT_UNAUTHORIZED
 const nodemailer = require("nodemailer");
 
 const emailWithNodemailer = async (options) => {

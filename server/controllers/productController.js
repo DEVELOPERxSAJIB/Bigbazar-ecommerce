@@ -56,6 +56,7 @@ const getAllProducts = async (req, res, next) => {
     if (req.query.category && req.query.category !== "All") {
       filters.category = req.query.category;
     }
+    
     if (req.query.brand) {
       let brandArray;
       if (Array.isArray(req.query.brand)) {
@@ -132,6 +133,7 @@ const getAllProducts = async (req, res, next) => {
     next(error);
   }
 };
+
 
 /**
  * @DESC get single product

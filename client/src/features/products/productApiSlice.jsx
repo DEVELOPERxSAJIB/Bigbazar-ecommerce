@@ -39,8 +39,6 @@ export const getAllProducts = createAsyncThunk(
         apiUrl += `&orderby=${sort}`;
       }
 
-      console.log(apiUrl);
-
       const response = await api.get(apiUrl, {
         withCredentials: true,
       });
